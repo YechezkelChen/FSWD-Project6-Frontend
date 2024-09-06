@@ -1,0 +1,158 @@
+:root {
+  --grey: #4a4a4a;
+  --blue: #008afc;
+  --blue-hover: #0056b3;
+  --red: #ff3b30;
+  --orange: #ff9500;
+  --green: #4cd964;
+  --yellow: #ffcc00;
+  --white: #f5f5f5;
+  --black: #000;
+  --purple: #5856d6;
+  --pink: #ff2f54;
+  --indigo: #505dd3;
+
+  --red-mut: rgba(255, 59, 48, 0.1);
+  --blue-mut: rgba(0, 138, 252, 0.1);
+  --green-mut: rgba(76, 217, 100, 0.1);
+  --orange-mut: rgba(255, 149, 0, 0.1);
+
+  --white-dim: rgba(255, 255, 255, 0.7);
+
+  --bg-color: #22272e;
+  --bg-color-sc: #2d333b;
+
+  --grey-1: #2d333b;
+  --grey-2: #8e9195;
+
+  --rad: 5px;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  background-color: var(--bg-color);
+  color: var(--white);
+
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* buttons */
+
+.btn {
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: var(--rad);
+}
+
+.btn-blue {
+  background-color: var(--blue);
+}
+
+.btn-blue:hover {
+  --blue-dim: #0077cc;
+  background-color: var(--blue-dim);
+}
+
+.btn-red {
+  background-color: var(--red);
+}
+
+.btn-red:hover {
+  --red-dim: #cc0000;
+  background-color: var(--red-dim);
+}
+
+.btn-orange {
+  background-color: var(--orange);
+}
+
+.btn-green {
+  background-color: var(--green);
+}
+
+.btn-green:hover {
+  --green-dim: #00cc00;
+  background-color: var(--green-dim);
+}
+
+.btn-sm {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.btn-bg {
+  font-size: 1.5rem;
+  padding: 0.7rem 1.5rem;
+}
+
+.btn-group {
+  display: flex;
+
+  gap: 0.2rem;
+
+  margin: 0 0.2rem;
+}
+
+.btn-inactive {
+  background-color: var(--grey);
+  cursor: not-allowed;
+}
+
+.btn-gray {
+  background-color: var(--grey);
+}
+
+.btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+.btn-icon p {
+  margin: 0;
+}
+
+/* Home */
+
+.home-header {
+  font-size: 8rem;
+
+  padding: 0;
+  margin: 0;
+
+  margin-bottom: 4.4rem;
+
+  font-family: "Times New Roman", Times, serif;
+}
+
+.home-subheader {
+  font-size: 2rem;
+
+  font-weight: 300;
+}
+
+.inline {
+  display: inline;
+}
